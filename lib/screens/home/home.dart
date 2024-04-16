@@ -16,9 +16,13 @@ class _HomeState extends State<Home> {
         centerTitle: true,
       ),
       body:  Container(
-        padding: const EdgeInsets.all(16),
-        child: const Text('Welcome to the Home screen!'),
-      )
+          padding: const EdgeInsets.all(16),
+          child: Column(
+            children: [
+              const Text("Character List:"),
+              FilledButton(onPressed: () {}, child: const Text("Create New Character")),
+            ],
+          ))
     );
   }
 }

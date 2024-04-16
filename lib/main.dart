@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_rpg/screens/home/home.dart';
+import 'package:flutter_rpg/theme.dart';
 
 void main() {
-  runApp(const MaterialApp(home: Sandbox()));
+  runApp( MaterialApp(
+      home: const Home(),
+      theme: primaryTheme));
 }
 class Sandbox extends StatelessWidget {
   const Sandbox({super.key});
@@ -11,13 +14,13 @@ class Sandbox extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Sandbox', style: TextStyle(color: Colors.grey[500]),),
-        backgroundColor: Colors.grey[100],
+        title:  Text('Sandbox', style: TextStyle(color: Colors.grey[800]),),
+        backgroundColor: Colors.grey[200],
         centerTitle: true,
       ),
       body: Container(
         padding: const EdgeInsets.all(16),
-        child: const Text('Welcome to the Sandbox screen!'),
+        child:  Text('Welcome to the Sandbox screen!', style: TextStyle(color: Colors.grey[800]),),
       )
     );
   }
