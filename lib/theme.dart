@@ -39,4 +39,15 @@ ThemeData primaryTheme = ThemeData(
           fontSize: 24,
           letterSpacing: 2,
           fontWeight: FontWeight.bold),
-    ));
+    ),
+
+    // Button Theme
+
+    buttonTheme: const ButtonThemeData(
+      buttonColor: AppColors.success,
+
+    ),
+
+
+);
+
